@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Register | Blogify</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script> <!-- defer ensures JS runs after DOM loads -->
+</head>
+<body>
+
+    <header class="navbar">
+        <h1 class="logo">Blogify</h1>
+        <nav>
+            <ul>
+                <li><button class="send-btn" onclick="window.location.href='index.html'">Home</button></li>
+                <li><button class="send-btn" onclick="window.location.href='about.html'">About</button></li>
+                <li><button class="send-btn" onclick="window.location.href='contact.html'">Contact</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="login-container">
+        <h2>Register</h2>
+        <form id="registerForm">
+            <div class="input-group">
+                <input type="text" id="username" placeholder="Username" required />
+                <input type="email" id="email" placeholder="Email" required />
+                <input type="password" id="password" placeholder="Password" required />
+            </div>
+            <button type="submit" class="send-btn">Register</button>
+            <label>Have an account? <a href="login.html">Login</a></label>
+        </form>
+    </section>
+
+</body>
+</html>

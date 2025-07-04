@@ -1,0 +1,51 @@
+<!-- ✅ Updated dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Blogify</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <h1 class="logo">Blogify</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <!-- ✅ Logout handled dynamically via authButton -->
+                <li><button id="authButton" class="send-btn">Logout</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="dashboard">
+        <h1>Welcome to Your Dashboard</h1>
+
+        <section class="profile">
+            <h2>Your Profile</h2>
+            <p><strong>Username:</strong> <span id="username"></span></p>
+            <p><strong>Email:</strong> <span id="email"></span></p>
+            <button class="send-btn" onclick="editProfile()">Edit Profile</button>
+        </section>
+
+        <section class="create-post">
+            <h2>Create a New Post</h2>
+            <form id="postForm">
+                <input type="text" id="postTitle" placeholder="Title" required>
+                <textarea id="postContent" placeholder="Write your post..." required></textarea>
+                <input type="file" id="postImage" accept="image/*">
+                <button type="submit" class="send-btn">Publish</button>
+            </form>
+        </section>
+
+        <section class="posts-container">
+            <h2>Your Posts</h2>
+            <div id="postsList"></div>
+        </section>
+    </section>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

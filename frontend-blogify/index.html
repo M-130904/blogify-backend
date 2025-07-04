@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogify</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <h1 class="logo">Blogify</h1>
+        <nav>
+            <ul>
+                <li><button class="send-btn" onclick="scrollToSection('home')">Home</button></li>
+                <li><button class="send-btn" onclick="scrollToSection('posts')">Posts</button></li>
+                <li><button class="send-btn" onclick="scrollToSection('about')">About</button></li>
+                <li><button class="send-btn" onclick="scrollToSection('contact')">Contact</button></li>
+            </ul>
+        </nav>
+        <button id="authButton" class="login-btn" onclick="window.location.href='login.html'">Login</button>
+
+    </header>
+    
+    <section id="home" class="hero">
+        <h1>Welcome to Blogify</h1>
+        <p>Express yourself through words and creativity</p>
+        <button class="send-btn">Get Started</button>
+    </section>
+    
+    <section id="posts" class="posts-container">
+        <h2>Latest Posts</h2>
+        <div id="latestPosts">
+            <!-- Posts will load here dynamically -->
+        </div>
+    </section>
+    
+    
+    <section id="about" class="about">
+        <h2>About Blogify</h2>
+        <p>Blogify is a platform where you can share your thoughts and ideas with the world.</p>
+    </section>
+    
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="send-btn">Send</button>
+        </form>
+    </section>
+    
+</section>
+
+    
+
+    
+</body>
+</html>
